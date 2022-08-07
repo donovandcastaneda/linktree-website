@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primereact/primeicons.css";
+import "primereact/primeflex.css";
 
+import { Avatar } from "primereact/avatar";
+import { Button } from "primereact/button";
 function App() {
+  const data = {
+    name: "Donovan Castaneda",
+    image: "http://github.com/donovandcastaneda.png",
+    bio: "Software Engineering Student at University of Kansas City, Missouri",
+    links: [
+      {
+        name: "my open source Github",
+        url: "http://github.com/donovandcastaneda",
+        icon: "github",
+      },
+      {
+        name: "follow me on twitter",
+        url: "http://twitter.com/donovandcastaneda",
+        icon: "twitter",
+      },
+    ],
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Avatar image={data.image} size="xlarge" shape="circle"></Avatar>
     </div>
   );
 }
