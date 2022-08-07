@@ -1,7 +1,7 @@
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
-import "primereact/primeicons.css";
-import "primereact/primeflex.css";
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
 
 import { Avatar } from "primereact/avatar";
 import { Button } from "primereact/button";
